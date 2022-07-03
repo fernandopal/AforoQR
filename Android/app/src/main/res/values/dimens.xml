@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+ -->
+<resources>
+    <!-- Corner radius -->
+    <dimen name="corner_radius_rounded_sm">8dp</dimen>
+
+    <!-- Paddings -->
+    <dimen name="padding_xs">4dp</dimen>
+    <dimen name="padding_sm">8dp</dimen>
+    <dimen name="padding_md">12dp</dimen>
+    <dimen name="padding_lg">16dp</dimen>
+    <dimen name="padding_xl">32dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="margin_sm">8dp</dimen>
+    <dimen name="margin_md">12dp</dimen>
+    <dimen name="margin_lg">16dp</dimen>
+    <dimen name="margin_xl">32dp</dimen>
+
+    <!-- Font Size -->
+    <dimen name="fs_xs">8sp</dimen>
+    <dimen name="fs_sm">14sp</dimen>
+    <dimen name="fs_md">16sp</dimen>
+    <dimen name="fs_lg">18sp</dimen>
+    <dimen name="fs_xl">24sp</dimen>
+
+    <!-- Bottom Nav -->
+    <dimen name="bottom_nav_height">56dp</dimen>
+    <dimen name="bottom_nav_fab_cradle_corner_radius">32dp</dimen>
+    <dimen name="bottom_nav_fab_cradle_margin">8dp</dimen>
+
+
+
+
+
+
+
+    <dimen name="grid_0_25">2dp</dimen>
+    <dimen name="grid_0_5">4dp</dimen>
+
+    <!--8dp grid-->
+    <dimen name="grid_1">8dp</dimen>
+    <dimen name="grid_2">16dp</dimen>
+    <dimen name="grid_3">24dp</dimen>
+    <dimen name="grid_4">32dp</dimen>
+
+    <dimen name="min_touch_target_size">48dp</dimen>
+    <dimen name="min_icon_target_padding">12dp</dimen>
+
+    <!--BottomNavigationDrawer-->
+    <dimen name="navigation_drawer_profile_image_size">48dp</dimen>
+    <dimen name="navigation_drawer_profile_image_size_padded">32dp</dimen>
+    <dimen name="navigation_drawer_menu_item_height">56dp</dimen>
+</resources>

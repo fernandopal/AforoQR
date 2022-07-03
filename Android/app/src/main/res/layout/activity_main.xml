@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+
+    Documentation used for the design of this activity:
+    - https://material.io/components/app-bars-bottom/android#bottom-app-bar
+    - https://medium.com/material-design-in-action/implementing-bottomappbar-behavior-fbfbc3a30568
+ -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:theme="@style/Theme.AforoQR.BottomAppBar"
+        app:fabCradleRoundedCornerRadius="@dimen/bottom_nav_fab_cradle_corner_radius"
+        app:fabCradleMargin="@dimen/bottom_nav_fab_cradle_margin"
+        app:fabAlignmentMode="center"
+        app:menu="@menu/bottom_app_bar"
+        app:hideOnScroll="true"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bottom_nav_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_scan"
+        app:layout_anchor="@id/bottomAppBar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

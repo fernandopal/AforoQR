@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+ -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/aforoqr_transparent_darken_30"
+    android:outlineSpotShadowColor="@color/aforoqr_transparent"
+    android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+    android:layout_marginEnd="@dimen/margin_sm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_base_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_sm"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/reservation_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/aforoqr_white_400"
+            android:textSize="@dimen/fs_xl" />
+
+        <TextView
+            android:id="@+id/reservation_item_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00/00"
+            android:textColor="@color/aforoqr_white_400"
+            android:textSize="@dimen/fs_lg" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

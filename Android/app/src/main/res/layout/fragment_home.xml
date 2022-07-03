@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+ -->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_sm"
+    android:paddingRight="@dimen/padding_sm"
+    android:paddingTop="@dimen/padding_sm"
+    android:background="?colorPrimary"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/home_profile_card"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:backgroundTint="@color/aforoqr_transparent_darken_30"
+        android:outlineSpotShadowColor="@color/aforoqr_transparent"
+        android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+        app:cardCornerRadius="@dimen/corner_radius_rounded_sm"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/padding_sm">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="@dimen/margin_sm"
+                android:src="@drawable/color_square" />
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:textColor="@color/aforoqr_white_500"
+                android:textSize="@dimen/fs_lg"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/profile_image"
+                android:layout_toEndOf="@+id/profile_image" />
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:textColor="@color/aforoqr_white_300"
+                android:textSize="@dimen/fs_md"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_name"
+                android:layout_toEndOf="@+id/profile_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_email"
+                android:layout_toEndOf="@+id/profile_image"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/home_layout_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="78dp"
+        android:layout_marginTop="@dimen/margin_lg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_profile_card">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_reservation_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

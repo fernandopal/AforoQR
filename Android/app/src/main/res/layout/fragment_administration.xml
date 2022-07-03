@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/bottom_nav_height"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_md"
+        tools:context=".ui.fragment.AdministrationFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stats_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/aforoqr_transparent_darken_30"
+            app:cardCornerRadius="@dimen/corner_radius_rounded_sm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_md">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_administration_stats_title"
+                    android:textColor="@color/aforoqr_yellow_500"
+                    android:textSize="@dimen/fs_md"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.75dp"
+                    android:layout_marginBottom="@dimen/margin_sm"
+                    android:background="@color/aforoqr_yellow_500" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/padding_sm">
+
+                    <View
+                        android:layout_width="0.75dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/aforoqr_yellow_500" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/padding_sm">
+
+                        <TextView
+                            android:id="@+id/reservations_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/aforoqr_white_500"
+                            android:textSize="@dimen/fs_sm" />
+
+                        <TextView
+                            android:id="@+id/events_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/aforoqr_white_500"
+                            android:textSize="@dimen/fs_sm" />
+
+                        <TextView
+                            android:id="@+id/users_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/aforoqr_white_500"
+                            android:textSize="@dimen/fs_sm" />
+
+                        <TextView
+                            android:id="@+id/rooms_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/aforoqr_white_500"
+                            android:textSize="@dimen/fs_sm" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/actions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/aforoqr_transparent_darken_30"
+            android:layout_marginTop="@dimen/margin_lg"
+            app:cardCornerRadius="@dimen/corner_radius_rounded_sm"
+            app:layout_constraintTop_toBottomOf="@+id/stats_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_md">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_administration_actions_title"
+                    android:textColor="@color/aforoqr_yellow_500"
+                    android:textSize="@dimen/fs_md"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.75dp"
+                    android:layout_marginBottom="@dimen/margin_sm"
+                    android:background="@color/aforoqr_yellow_500" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/padding_sm">
+
+                    <View
+                        android:layout_width="0.75dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/aforoqr_yellow_500" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/padding_sm">
+
+                        <Button
+                            android:id="@+id/btn_create_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/AforoQR.Admin.Button"
+                            android:layout_marginTop="@dimen/padding_sm"
+                            android:text="@string/fragment_administration_actions_create_room" />
+
+                        <Button
+                            android:id="@+id/btn_list_rooms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/AforoQR.Admin.Button"
+                            android:layout_marginTop="@dimen/margin_sm"
+                            android:text="@string/fragment_administration_actions_list_rooms" />
+
+                        <Button
+                            android:id="@+id/btn_list_users"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/AforoQR.Admin.Button"
+                            android:layout_marginTop="@dimen/margin_sm"
+                            android:text="@string/fragment_administration_actions_list_users" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/layout_image"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:layout_marginBottom="@dimen/bottom_nav_height"
+            android:backgroundTint="@color/aforoqr_transparent_darken_30"
+            app:cardCornerRadius="@dimen/corner_radius_rounded_sm"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actions_layout" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_recycler"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:layout_marginBottom="@dimen/bottom_nav_height"
+            android:backgroundTint="@color/aforoqr_transparent_darken_30"
+            app:cardCornerRadius="@dimen/corner_radius_rounded_sm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actions_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_md">
+
+                <TextView
+                    android:id="@+id/fragment_admin_actions_recycler_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/aforoqr_yellow_500"
+                    android:textSize="@dimen/fs_md"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.75dp"
+                    android:layout_marginBottom="@dimen/margin_sm"
+                    android:background="@color/aforoqr_yellow_500" />
+
+                <TextView
+                    android:id="@+id/fragment_admin_actions_recycler_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/aforoqr_white_500"
+                    android:textSize="@dimen/fs_sm"
+                    android:layout_marginBottom="@dimen/margin_sm"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_create_room"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:backgroundTint="@color/aforoqr_transparent_darken_30"
+            app:cardCornerRadius="@dimen/corner_radius_rounded_sm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actions_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_md">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_administration_actions_create_room_details"
+                        android:textColor="@color/aforoqr_yellow_500"
+                        android:textSize="@dimen/fs_md"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_room_name"
+                        style="@style/AforoQR.Search.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+                        android:outlineSpotShadowColor="@color/aforoqr_transparent"
+                        android:shadowColor="@color/aforoqr_transparent"
+                        android:hint="@string/fragment_administration_actions_create_room_name"
+                        android:inputType="text"
+                        android:shadowRadius="0" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_room_code"
+                        style="@style/AforoQR.Search.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+                        android:outlineSpotShadowColor="@color/aforoqr_transparent"
+                        android:shadowColor="@color/aforoqr_transparent"
+                        android:hint="@string/fragment_administration_actions_create_room_code"
+                        android:inputType="text"
+                        android:shadowRadius="0" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_room_capacity"
+                        style="@style/AforoQR.Search.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+                        android:outlineSpotShadowColor="@color/aforoqr_transparent"
+                        android:shadowColor="@color/aforoqr_transparent"
+                        android:hint="@string/fragment_administration_actions_create_room_capacity"
+                        android:inputType="number"
+                        android:shadowRadius="0" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_administration_actions_create_room_location"
+                        android:textColor="@color/aforoqr_yellow_500"
+                        android:layout_marginTop="@dimen/margin_lg"
+                        android:textSize="@dimen/fs_md"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_room_address_city"
+                        style="@style/AforoQR.Search.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+                        android:outlineSpotShadowColor="@color/aforoqr_transparent"
+                        android:shadowColor="@color/aforoqr_transparent"
+                        android:hint="@string/fragment_administration_actions_create_room_city"
+                        android:inputType="text"
+                        android:shadowRadius="0" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_room_address_country"
+                        style="@style/AforoQR.Search.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+                        android:outlineSpotShadowColor="@color/aforoqr_transparent"
+                        android:shadowColor="@color/aforoqr_transparent"
+                        android:hint="@string/fragment_administration_actions_create_room_country"
+                        android:inputType="text"
+                        android:shadowRadius="0" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_room_address_street"
+                        style="@style/AforoQR.Search.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+                        android:outlineSpotShadowColor="@color/aforoqr_transparent"
+                        android:shadowColor="@color/aforoqr_transparent"
+                        android:hint="@string/fragment_administration_actions_create_room_street"
+                        android:inputType="text"
+                        android:shadowRadius="0" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_room_address_street_number"
+                        style="@style/AforoQR.Search.TextInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+                        android:outlineSpotShadowColor="@color/aforoqr_transparent"
+                        android:shadowColor="@color/aforoqr_transparent"
+                        android:hint="@string/fragment_administration_actions_create_room_street_number"
+                        android:inputType="number"
+                        android:shadowRadius="0" />
+
+                    <Button
+                        android:id="@+id/btn_create_room_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/AforoQR.Admin.Button"
+                        android:layout_marginTop="@dimen/margin_sm"
+                        android:text="@string/fragment_administration_actions_create_room_save" />
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

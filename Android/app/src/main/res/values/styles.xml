@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+ -->
+<resources>
+    <style name="AforoQR.Generic.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+        <item name="cornerRadius">@dimen/corner_radius_rounded_sm</item>
+        <item name="backgroundTint">?colorSecondary</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+    </style>
+
+    <style name="AforoQR.Admin.Button" parent="android:TextAppearance">
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+        <item name="cornerRadius">@dimen/corner_radius_rounded_sm</item>
+        <item name="backgroundTint">@color/aforoqr_orange_400_alpha_050</item>
+        <item name="android:padding">@dimen/padding_sm</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">@dimen/fs_md</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+    <style name="AforoQR.Search.Button" parent="AforoQR.Generic.Button">
+        <item name="backgroundTint">@color/aforoqr_yellow_500</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="AforoQR.Search.TextInputLayout" parent="ThemeOverlay.Material3.TextInputEditText.FilledBox">
+        <item name="boxBackgroundColor">@color/aforoqr_transparent</item>
+        <item name="android:textColor">@color/aforoqr_white_50_alpha_060</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/aforoqr_white_50_alpha_060</item>
+    </style>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+ -->
+<resources>
+    <!--Color palette-->
+    <color name="aforoqr_transparent">#00FFFFFF</color>
+    <color name="aforoqr_transparent_darken_90">#E6000000</color>
+    <color name="aforoqr_transparent_darken_70">#B3000000</color>
+    <color name="aforoqr_transparent_darken_50">#80000000</color>
+    <color name="aforoqr_transparent_darken_40">#66000000</color>
+    <color name="aforoqr_transparent_darken_30">#4D000000</color>
+    <color name="aforoqr_transparent_darken_20">#33000000</color>
+    <color name="aforoqr_transparent_darken_10">#1A000000</color>
+
+    <color name="aforoqr_white_500">#ffffff</color>
+    <color name="aforoqr_white_400">#e6e6e6</color>
+    <color name="aforoqr_white_300">#cccccc</color>
+    <color name="aforoqr_white_200">#b3b3b3</color>
+    <color name="aforoqr_white_100">#808080</color>
+
+    <color name="aforoqr_black_800">#121212</color>
+    <color name="aforoqr_black_900">#000000</color>
+
+    <color name="aforoqr_blue_50">#eef0f2</color>
+    <color name="aforoqr_blue_100">#d2dbe0</color>
+    <color name="aforoqr_blue_200">#adbbc4</color>
+    <color name="aforoqr_blue_300">#8ca2ae</color>
+    <color name="aforoqr_blue_600">#4a6572</color>
+    <color name="aforoqr_blue_700">#344955</color>
+    <color name="aforoqr_blue_800">#232f34</color>
+
+    <color name="aforoqr_yellow_300">#fbd790</color>
+    <color name="aforoqr_yellow_400">#f9be64</color>
+    <color name="aforoqr_yellow_500">#f9aa33</color>
+    <color name="aforoqr_yellow_500_alpha_20">#33F9AA33</color>
+    <color name="aforoqr_yellow_500_alpha_50">#80F9AA33</color>
+    <color name="aforoqr_yellow_500_alpha_70">#B3F9AA33</color>
+
+    <color name="aforoqr_orange_200">#e58b79</color>
+    <color name="aforoqr_orange_400">#df6e57</color>
+    <color name="aforoqr_orange_400_alpha_050">#80DF6E57</color>
+
+    <color name="aforoqr_white_50_alpha_060">#99ffffff</color>
+
+    <color name="aforoqr_blue_50_alpha_060">#99eef0f2</color>
+
+    <color name="aforoqr_black_900_alpha_020">#33000000</color>
+    <color name="aforoqr_black_900_alpha_087">#de000000</color>
+    <color name="aforoqr_black_900_alpha_060">#99000000</color>
+</resources>

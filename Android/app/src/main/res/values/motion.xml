@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+ -->
+<resources>
+    <integer name="animation_duration_slow">300</integer>
+    <integer name="animation_duration_medium">225</integer>
+    <integer name="animation_duration_fast">175</integer>
+
+</resources>

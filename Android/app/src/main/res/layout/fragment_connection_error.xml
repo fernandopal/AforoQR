@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ConnectionErrorFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/aforoqr_transparent_darken_30"
+        android:outlineAmbientShadowColor="@color/aforoqr_transparent"
+        android:outlineSpotShadowColor="@color/aforoqr_transparent"
+        android:layout_margin="@dimen/margin_lg"
+        app:cardCornerRadius="@dimen/corner_radius_rounded_sm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_sm"
+            app:layout_constraintBottom_toTopOf="@+id/new_reservation_confirm_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_md"
+                android:textColor="@color/aforoqr_yellow_500"
+                android:textStyle="bold"
+                android:textSize="@dimen/fs_xl"
+                android:textAlignment="center"
+                android:text="@string/oops" />
+
+            <TextView
+                android:id="@+id/error_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/aforoqr_white_400"
+                android:textStyle="bold"
+                android:textSize="@dimen/fs_md"
+                android:textAlignment="center"
+                android:text="@string/server_error_message" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

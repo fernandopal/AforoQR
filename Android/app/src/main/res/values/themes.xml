@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+ -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.AforoQR.DayNight" parent="Theme.AforoQR"/>
+
+    <style name="Theme.AforoQR" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/aforoqr_blue_700</item>
+        <item name="colorPrimaryVariant">@color/aforoqr_blue_800</item>
+        <item name="colorSecondary">@color/aforoqr_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/aforoqr_yellow_400</item>
+
+        <item name="android:colorBackground">@color/aforoqr_blue_700</item>
+        <item name="colorSurface">@color/aforoqr_blue_800</item>
+        <item name="colorSurfaceVariant">@color/aforoqr_white_300</item>
+        <item name="colorError">@color/aforoqr_orange_400</item>
+
+        <item name="colorOnPrimary">@color/aforoqr_white_500</item>
+        <item name="colorOnSecondary">@color/aforoqr_black_900</item>
+        <item name="colorOnBackground">@color/aforoqr_white_300</item>
+        <item name="colorOnSurface">@color/aforoqr_white_300</item>
+        <item name="colorOnError">@color/aforoqr_orange_400</item>
+
+        <item name="scrimBackground">@color/aforoqr_white_50_alpha_060</item>
+        <item name="android:statusBarColor">@color/aforoqr_blue_800</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.AforoQR.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.AforoQR.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.AforoQR.LargeComponent</item>
+
+        <!--Typography-->
+        <item name="textAppearanceHeadline2">@style/TextAppearance.AforoQR.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.AforoQR.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.AforoQR.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.AforoQR.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.AforoQR.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.AforoQR.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.AforoQR.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AforoQR.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.AforoQR.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.AforoQR.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.AforoQR.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.AforoQR.Overline</item>
+
+        <!--System/Platform attributes-->
+        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationStyle</item>
+    </style>
+
+    <style name="Theme.AforoQR.BottomAppBar" parent="ThemeOverlay.Material3.BottomAppBar">
+        <item name="colorSurface">?colorPrimary</item>
+        <item name="colorSurfaceVariant">?colorPrimaryVariant</item>
+        <item name="colorControlNormal">?colorOnPrimary</item>
+        <item name="navigationIconTint">?colorOnPrimary</item>
+    </style>
+
+    <style name="WindowAnimationStyle">
+        <item name="android:windowEnterAnimation">@android:anim/linear_interpolator</item>
+    </style>
+</resources>

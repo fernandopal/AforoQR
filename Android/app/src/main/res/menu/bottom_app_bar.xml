@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+ -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/bottom_app_bar_menu_option_search"
+        android:contentDescription="@string/bottom_app_bar_menu_option_desc_search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bottom_nav_sign_out"
+        android:title="@string/bottom_app_bar_menu_option_sign_out"
+        android:contentDescription="@string/bottom_app_bar_menu_option_desc_sign_out"
+        app:showAsAction="never" />
+
+    <!-- <item
+        android:id="@+id/bottom_nav_settings"
+        android:title="@string/bottom_app_bar_menu_option_settings"
+        android:contentDescription="@string/bottom_app_bar_menu_option_desc_settings"
+        app:showAsAction="never" /> -->
+
+    <item
+        android:id="@+id/bottom_nav_administration"
+        android:title="@string/bottom_app_bar_menu_option_administration"
+        android:contentDescription="@string/bottom_app_bar_menu_option_desc_administration"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

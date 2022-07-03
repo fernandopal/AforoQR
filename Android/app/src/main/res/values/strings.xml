@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2022 Fernando Palomo <mail@fernandopal.es>.
+    All rights reserved.
+ -->
+<resources>
+    <string name="app_name">AforoQR</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <string name="dialog_generic_cancel">No</string>
+    <string name="dialog_generic_accept">Si</string>
+    <string name="reservations_btn_cancel_reservation">Cancelar reserva</string>
+    <string name="reservations_btn_send_confirmation">Reenviar confirmación</string>
+    <string name="reservations_btn_delete">Eliminar de la lista</string>
+    <string name="search_search_btn">Buscar</string>
+    <string name="search_search_bar_hint">Buscar eventos o salas</string>
+    <string name="new_reservation_confirm_btn">Confirmar reserva</string>
+    <string name="new_reservation_select_help">Selecciona una franja horaria:</string>
+    <string name="new_reservation_title">NUEVA RESERVA</string>
+    <string name="new_reservation_date_help">Selecciona una fecha y hora para tu reserva</string>
+    <string name="bottom_app_bar_menu_option_administration">Administración</string>
+    <string name="bottom_app_bar_menu_option_settings">Configuración</string>
+    <string name="bottom_app_bar_menu_option_search">Buscar</string>
+    <string name="bottom_app_bar_menu_option_desc_search">Buscar salas o eventos</string>
+    <string name="bottom_app_bar_menu_option_desc_settings">Configuración</string>
+    <string name="bottom_app_bar_menu_option_desc_administration">Open administration tools window</string>
+    <string name="oops">Oops!</string>
+    <string name="server_error_message">El servidor se encuentra fuera de servicio o en mantenimiento, vuelve a intentarlo mas tarde.</string>
+    <string name="activity_login_btn_login">Iniciar Sesión</string>
+    <string name="activity_login_register_new_account">¿Aún no tienes una cuenta? Registrate aquí</string>
+    <string name="activity_login_input_confirm_password">Confirmar contraseña</string>
+    <string name="activity_login_input_password">Contraseña</string>
+    <string name="activity_login_input_email">Correo electrónico</string>
+    <string name="activity_login_input_name">Nombre</string>
+    <string name="activity_new_reservation_date_placeholder">dd/mm/yyyy</string>
+    <string name="reservation_details_text_detail">Detalles de tu reserva</string>
+    <string name="content_desc_calendar_icon">Calendar Icon</string>
+    <string name="fragment_new_reservation_email_confirmation_text">Se ha envíado al correo electrónico {!email} un email con el link de confirmación para esta reserva, el link es válido durante los próximos 15 minutos. Cualquier reserva no confirmada será automáticamente cancelada.</string>
+    <string name="fragment_administration_stats_title">Estadísticas</string>
+    <string name="bottom_app_bar_menu_option_desc_sign_out">Cerrar Sesión</string>
+    <string name="bottom_app_bar_menu_option_sign_out">Cerrar Sesión</string>
+    <string name="fragment_administration_actions_title">Acciones disponibles</string>
+    <string name="fragment_administration_actions_create_room">Crear Sala</string>
+    <string name="fragment_administration_actions_list_rooms">Listar Salas</string>
+    <string name="fragment_administration_actions_list_users">Listar Usuarios</string>
+    <string name="fragment_administration_actions_create_room_save">Guardar</string>
+    <string name="fragment_administration_actions_create_room_street_number">Número</string>
+    <string name="fragment_administration_actions_create_room_street">Calle</string>
+    <string name="fragment_administration_actions_create_room_country">País</string>
+    <string name="fragment_administration_actions_create_room_city">Ciudad</string>
+    <string name="fragment_administration_actions_create_room_location">Ubicación de la sala</string>
+    <string name="fragment_administration_actions_create_room_capacity">Aforo Máximo</string>
+    <string name="fragment_administration_actions_create_room_code">Código</string>
+    <string name="fragment_administration_actions_create_room_name">Nombre</string>
+    <string name="fragment_administration_actions_create_room_details">Datos de la sala</string>
+    <string name="fragment_administration_actions_list_users_title">Usuarios</string>
+    <string name="fragment_administration_actions_list_users_description">Puedes dar o quitar permisos de administrador a cada usuario activando o desactivando el interruptor de la izquierda</string>
+    <string name="fragment_administration_actions_list_rooms_title">Salas</string>
+    <string name="fragment_administration_actions_list_rooms_description">Para borrar una sala pulsa en el icono de la papelera. Esta acción es permanente, ten cuidado.</string>
+</resources>
