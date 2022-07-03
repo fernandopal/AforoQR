@@ -1,0 +1,103 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: never
+    include-exception: false
+    whitelabel:
+      enabled: true
+  port: 26080
+
+security:
+  admins:
+    - mail@fernandopal.es
+    - mail@fpalomo.es
+  cors:
+    allow-credentials: true
+    allowed-headers:
+      - Authorization
+      - Origin
+      - Content-Type
+      - Accept
+      - Accept-Encoding
+      - Accept-Language
+      - Access-Control-Allow-Origin
+      - Access-Control-Allow-Headers
+      - Access-Control-Request-Method
+      - X-Requested-With
+      - X-Auth-Token
+      - X-Xsrf-Token
+      - Cache-Control
+      - Id-Token
+    exposed-headers:
+      - X-Xsrf-Token
+    allowed-methods:
+      - GET
+      - POST
+      - DELETE
+      - OPTIONS
+    allowed-origins:
+      - http://localhost:26080
+      - http://localhost:26443
+    exposed-api-routes-ant-match:
+      - /api/v1/reservation/{id}/confirm/{token}
+      - /api/v1/stats
+      - /swagger-ui/*
+      - /v3/api-docs/*
+      - /api/v1/user/is/*
+      - /api/v1/qr/*/**
+      - /session/me
+      - /favicon.ico
+  roles:
+    - ADMIN
+    - USER
+
+spring:
+  cloud:
+    gcp:
+      project-id: aforoqr
+      credentials:
+        location: classpath:google-services.json
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/aforoqr
+    username: *************
+    password: *************
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 15MB
+  mail:
+    host: *************
+    port: 465
+    username: *************
+    password: *************
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+  main:
+    banner-mode: off
+  output:
+    ansi:
+      enabled: ALWAYS
+  mvc:
+    throw-exception-if-no-handler-found: true
+
+logging:
+  pattern:
+    console: '%clr(%d{dd/MM/yy HH:mm:ss}){faint} %clr(%-2.6p) %clr(%-40.40logger{39}){cyan} : %m%n'
